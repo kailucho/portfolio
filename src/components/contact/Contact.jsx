@@ -39,7 +39,11 @@ function Contact() {
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>luijhy9234@gmail.com</h5>
-            <a href="mailto:luijhy9234@gmail.com" target="_blank">
+            <a
+              href="mailto:luijhy9234@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               Send a message
             </a>
           </div>
@@ -47,7 +51,7 @@ function Contact() {
             <RiMessengerLine className="contact__option-icon" />
             <h4>Messenger</h4>
             <h5>Kaido</h5>
-            <a href="https://m.me/kailucho" target="_blank">
+            <a href="https://m.me/kailucho" target="_blank" rel="noreferrer">
               Send a message
             </a>
           </div>
@@ -58,6 +62,7 @@ function Contact() {
             <a
               href="https://api.whatsapp.com/send?phone+051933053739"
               target="_blank"
+              rel="noreferrer"
             >
               Send a message
             </a>
