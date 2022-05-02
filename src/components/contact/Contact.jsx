@@ -60,7 +60,7 @@ function Contact() {
             <h4>Whatsapp</h4>
             <h5>+051933053739</h5>
             <a
-              href="https://api.whatsapp.com/send?phone+051933053739"
+              href="https://api.whatsapp.com/send?phone=933053739"
               target="_blank"
               rel="noreferrer"
             >

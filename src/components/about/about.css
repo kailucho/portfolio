@@ -1,3 +1,8 @@
+#about {
+  text-align: center;
+  position: relative;
+}
+
 .about__container {
   display: grid;
   grid-template-columns: 35% 50%;
@@ -65,6 +70,13 @@
 .about__content p {
   margin: 2rem 0 2.6rem;
   color: var(--color-light);
+}
+
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */

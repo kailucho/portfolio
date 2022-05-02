@@ -4,19 +4,26 @@ import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 
 import "./about.css";
-import ME from "../../assets/me-about.jpg";
+// import ME from "../../assets/me-about.jpg";
+import CTA from "./CTA";
 
 const About = () => {
   return (
     <section id="about">
+      <div>
+        <h5>Hello I'm</h5>
+        <h1>Luijhy Guerra</h1>
+        <h5 className="text-ligth">React Developer</h5>
+      </div>
       <h5>Get To Know</h5>
       <h2>About Me</h2>
       <div className="container about__container">
-        <div className="about__me">
-          <div className="about__me-image">
-            <img src={ME} alt="About" />
-          </div>
-        </div>
+        <p>
+          Hello, I am a React programmer with more than 3 years of experience
+          known for my ability to face new challenges. I feel trained in the
+          JavaScript language and provide solutions to the challenges that
+          arise, as well as good customer service to capture their needs.
+        </p>
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
@@ -28,27 +35,17 @@ const About = () => {
             <article className="about__card">
               <FiUsers className="about__icon" />
               <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <small>10+ Worldwide</small>
             </article>
 
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <small>10+ Completed</small>
             </article>
           </div>
-
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae,
-            accusamus sunt et, aut facilis nobis nemo quis, laborum earum
-            impedit soluta sapiente. Tempore modi unde repellat placeat hic,
-            dicta neque.
-          </p>
-
-          <a href="#contact" className="btn btn-primary">
-            Let's Talk
-          </a>
         </div>
+        <CTA />
       </div>
     </section>
   );

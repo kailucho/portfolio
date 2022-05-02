@@ -1,43 +1,15 @@
 import React from "react";
 
 import "./portfolio.css";
-import IMG1 from "../../assets/portfolio1.jpg";
+import IMG1 from "../../assets/portfolio1.png";
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Crypto curency dashboard",
-    github: "https://github.com",
-    demo: "https://dribbble.com/",
-  },
-  {
-    id: 2,
-    image: IMG1,
-    title: "Crypto curency dashboard",
-    github: "https://github.com",
-    demo: "https://dribbble.com/",
-  },
-  {
-    id: 3,
-    image: IMG1,
-    title: "Crypto curency dashboard",
-    github: "https://github.com",
-    demo: "https://dribbble.com/",
-  },
-  {
-    id: 4,
-    image: IMG1,
-    title: "Crypto curency dashboard",
-    github: "https://github.com",
-    demo: "https://dribbble.com/",
-  },
-  {
-    id: 5,
-    image: IMG1,
-    title: "Crypto curency dashboard",
-    github: "https://github.com",
-    demo: "https://dribbble.com/",
+    title: "covid-19 tracker ",
+    github: "https://github.com/kailucho/covid19-tracker",
+    demo: "https://covid19-tracker-kaido.netlify.app/",
   },
 ];
 
