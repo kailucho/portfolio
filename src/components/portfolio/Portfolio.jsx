@@ -2,6 +2,7 @@ import React from "react";
 
 import "./portfolio.css";
 import IMG1 from "../../assets/portfolio1.png";
+import IMG2 from "../../assets/portfolio2.png";
 
 const data = [
   {
@@ -10,6 +11,13 @@ const data = [
     title: "covid-19 tracker ",
     github: "https://github.com/kailucho/covid19-tracker",
     demo: "https://covid19-tracker-kaido.netlify.app/",
+  },
+  {
+    id: 2,
+    image: IMG2,
+    title: "Amazon clone ",
+    github: "https://github.com/kailucho/amazon-clone",
+    demo: "https://clone-8d9f5.web.app/",
   },
 ];
 
