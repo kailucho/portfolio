@@ -18,7 +18,6 @@
   text-align: center;
   border: 1px solid transparent;
   transition: var(--transition);
-
 }
 
 .contact__option:hover {
@@ -29,12 +28,22 @@
 .contact__option-icon {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+
+.contact__option h4 {
+  color: var(--color-secondary);
+}
+
+.contact__option h5 {
+  color: var(--color-accent);
 }
 
 .contact__option a {
   margin-top: 0.7rem;
   display: inline-block;
   font-size: 0.8rem;
+  color: var(--color-primary);
 }
 
 /* FORM */
@@ -55,6 +64,11 @@ textarea {
   color: var(--color-white);
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-light);
+}
+
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 
 @media screen and (max-width:1024px) {
@@ -68,6 +82,6 @@ textarea {
 
 @media screen and (max-width:600px) {
   .container.contact__container {
-    width: var(--container-width-sm)
+    width: var(--container-width-sm);
   }
 }

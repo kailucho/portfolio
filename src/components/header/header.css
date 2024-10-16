@@ -2,12 +2,14 @@ header {
   height: 100vh;
   padding-top: 7rem;
   overflow: hidden;
+  background-color: var(--color-bg);
 }
 
 .header__container {
   text-align: center;
   height: 100%;
   position: relative;
+  color: var(--color-white);
 }
 
 /* CTA */
@@ -28,14 +30,13 @@ header {
   position: absolute;
   left: 0;
   bottom: 3rem;
-
 }
 
 .header__socials::after {
   content: "";
   width: 1px;
   height: 2rem;
-  background: var(--color-primary)
+  background: var(--color-primary);
 }
 
 /* ME */
@@ -49,7 +50,6 @@ header {
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding: 5rem 1.5rem 1.5rem 1.5rem;
-
 }
 
 /* SCROLL DOWN */
@@ -60,6 +60,7 @@ header {
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
+  color: var(--color-light);
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */
@@ -79,6 +80,6 @@ header {
 
   .header__socials,
   .scroll__down {
-    display: none
+    display: none;
   }
 }
