@@ -53,7 +53,7 @@
 }
 
 .about__icon {
-  color: var(--coor-primary);
+  color: var(--color-primary);
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
