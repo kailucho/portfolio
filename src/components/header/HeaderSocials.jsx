@@ -1,11 +1,6 @@
 import React from "react";
-import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 
-/**
- * HeaderSocials Component
- * Displays social media links for a React developer's portfolio.
- * Replace the placeholder URLs with your actual profile links.
- */
 const HeaderSocials = () => {
   return (
     <div className="header__socials">
