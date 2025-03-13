@@ -32,7 +32,7 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://www.linkedin.com/in/luijhy-guerra-flores-057262144"
+          href="https://www.linkedin.com/in/luijhy-michael-guerra-flores"
           target="_blank"
           rel="noreferrer"
         >

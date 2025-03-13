@@ -2,37 +2,39 @@ import React from "react";
 import { BsPatchCheckFill } from "react-icons/bs";
 
 import "./experience.css";
+
 function Experience() {
   const frontendData = [
-    { title: "React", level: "Experienced" },
-    { title: "Redux", level: "Intermediate" },
-    { title: "Typescript", level: "Intermediate" },
-    { title: "Javascript", level: "Experienced" },
-    { title: "HTML", level: "Experienced" },
-    { title: "CSS", level: "Experienced" },
-    { title: "Bootstrap", level: "Experienced" },
-    { title: "Tailwind", level: "Intermediate" },
+    { title: "React", level: "Expert" },
+    { title: "Redux", level: "Advanced" },
+    { title: "Next.js", level: "Advanced" },
+    { title: "TypeScript", level: "Advanced" },
+    { title: "JavaScript", level: "Expert" },
+    { title: "HTML5", level: "Expert" },
+    { title: "CSS3", level: "Expert" },
+    { title: "Tailwind CSS", level: "Advanced" },
   ];
+
   const backendData = [
-    { title: "Node JS", level: "Experienced" },
-    { title: "NestJS", level: "Intermediate" },
-    { title: "MySQL", level: "Experienced" },
-    { title: "GraphQL", level: "Intermediate" },
-    { title: "MongoDB", level: "Intermediate" },
-    { title: "PHP", level: "Intermediate" },
-    { title: "Python", level: "Experienced" },
+    { title: "Node.js", level: "Expert" },
+    { title: "NestJS", level: "Advanced" },
+    { title: "Express.js", level: "Advanced" },
+    { title: "GraphQL", level: "Advanced" },
+    { title: "MongoDB", level: "Advanced" },
+    { title: "MySQL", level: "Expert" },
+    { title: "Serverless (AWS/Azure)", level: "Advanced" },
   ];
+
   return (
     <section id="experience">
-      <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
-
+      <h5>Skills & Expertise</h5>
+      <h2>Professional Experience</h2>
       <div className="container experience__container">
         <div className="experience__frontend">
           <h3>Frontend Development</h3>
           <div className="experience__content">
             {frontendData.map(({ title, level }) => (
-              <article className="experience__details">
+              <article key={title} className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
                   <h4>{title}</h4>
@@ -43,11 +45,11 @@ function Experience() {
           </div>
         </div>
 
-        <div className="experience__frontend">
+        <div className="experience__backend">
           <h3>Backend Development</h3>
           <div className="experience__content">
             {backendData.map(({ title, level }) => (
-              <article className="experience__details">
+              <article key={title} className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
                   <h4>{title}</h4>

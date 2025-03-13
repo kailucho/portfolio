@@ -40,7 +40,11 @@ header {
 
 /* ME */
 .me {
-  background: linear-gradient(var(--color-primary), transparent);
+  background: radial-gradient(
+    circle at top center,
+    var(--color-primary),
+    transparent 70%
+  );
   width: 22rem;
   height: 30rem;
   position: absolute;
@@ -49,8 +53,8 @@ header {
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding: 5rem 1.5rem 1.5rem 1.5rem;
-
 }
+
 
 /* SCROLL DOWN */
 .scroll__down {

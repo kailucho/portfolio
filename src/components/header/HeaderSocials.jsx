@@ -1,17 +1,29 @@
 import React from "react";
-import { BsLinkedin, BsGithub, BsDribbble } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
 
+/**
+ * HeaderSocials Component
+ * Displays social media links for a React developer's portfolio.
+ * Replace the placeholder URLs with your actual profile links.
+ */
 const HeaderSocials = () => {
   return (
     <div className="header__socials">
-      <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+      <a
+        href="https://www.linkedin.com/in/luijhy-michael-guerra-flores"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn Profile"
+      >
         <BsLinkedin />
       </a>
-      <a href="https://github.com" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/kailucho"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub Profile"
+      >
         <BsGithub />
-      </a>
-      <a href="https://dribbble.com" target="_blank" rel="noreferrer">
-        <BsDribbble />
       </a>
     </div>
   );
