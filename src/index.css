@@ -134,8 +134,13 @@ p {
 }
 
 .section-paper {
-  background: var(--paper);
-  color: var(--text-on-paper);
+  --paper: var(--ink);
+  --paper-deep: var(--ink-soft);
+  --text-on-paper: var(--text-on-ink);
+  --muted-on-paper: var(--muted-on-ink);
+  --line-light: var(--line-dark);
+  background: var(--ink);
+  color: var(--text-on-ink);
 }
 
 .section-ink {

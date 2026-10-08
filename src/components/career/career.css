@@ -61,7 +61,8 @@
 }
 
 .production-ai {
-  background: var(--ink);
+  background: var(--ink-soft);
+  border: 1px solid var(--line-dark);
   color: var(--text-on-ink);
   display: grid;
   gap: var(--space-6);

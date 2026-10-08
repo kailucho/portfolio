@@ -73,7 +73,8 @@
 }
 
 .flagship__system {
-  background: var(--ink);
+  background: var(--ink-soft);
+  border: 1px solid var(--line-dark);
   color: var(--text-on-ink);
   padding: var(--space-5);
 }
