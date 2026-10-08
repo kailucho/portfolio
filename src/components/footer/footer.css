@@ -1,68 +1,70 @@
-footer {
-  background: var(--color-primary);
-  padding: 3rem 0;
-  text-align: center;
-  font-size: 0.9rem;
-  margin-top: 7rem;
+.site-footer {
+  background: var(--ink);
+  color: var(--text-on-ink);
+  padding-block: var(--space-6);
 }
 
-footer a {
-  color: var(--color-bg);
+.site-footer__grid {
+  align-items: center;
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: 1fr 2fr 2fr 1fr;
 }
 
-.footer__logo {
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 2rem;
-  display: inline-block;
+.site-footer__brand {
+  align-items: center;
+  color: var(--signal);
+  display: inline-flex;
+  font-family: var(--font-mono);
+  min-height: 2.75rem;
+  min-width: 2.75rem;
 }
 
-.permalinks {
+.site-footer__grid > p,
+.site-footer__links,
+.site-footer__copyright {
+  color: var(--muted-on-ink);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+}
+
+.site-footer__links {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0 auto 3rem;
+  gap: var(--space-4);
 }
 
-.footer__socials {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 4rem;
+.site-footer__links a {
+  align-items: center;
+  display: inline-flex;
+  min-height: 2.75rem;
+  transition: color var(--transition-fast);
 }
 
-.footer__socials a {
-  background: var(--color-bg);
-  color: var(--color-white);
-  padding: 0.8rem;
-  border-radius: 0.7rem;
-  display: flex;
-  border: 1px solid transparent;
+.site-footer__links a:hover {
+  color: var(--text-on-ink);
 }
 
-.footer__socials a:hover {
-  background: transparent;
-  color: var(--color-bg);
-  border-color: var(--color-bg)
+.site-footer__copyright {
+  justify-self: end;
 }
 
-.footer__copyright {
-  margin-bottom: 4rem;
-  color: var(--color-bg);
-}
-
-@media screen and (max-width:1024px) {}
-
-/* MEDIA QUERIES (SMALL DEVICES) */
-
-@media screen and (max-width:600px) {
-  .permalinks {
-    flex-direction: column;
-    gap: 1.5rem;
+@media (max-width: 780px) {
+  .site-footer__grid {
+    grid-template-columns: 1fr 1fr;
   }
 
-  .footer__socials {
-    margin-bottom: 2.6rem;
+  .site-footer__copyright {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 500px) {
+  .site-footer__grid {
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer__links {
+    flex-wrap: wrap;
   }
 }

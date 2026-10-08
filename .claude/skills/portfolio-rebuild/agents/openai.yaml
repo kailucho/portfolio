@@ -1,0 +1,4 @@
+interface:
+  display_name: "Portfolio Rebuild"
+  short_description: "Transformative portfolio redesign workflow"
+  default_prompt: "Use $portfolio-rebuild to perform a factual, production-safe total redesign of this portfolio."

@@ -1,53 +1,20 @@
 import React from "react";
-import { FaFacebookF } from "react-icons/fa";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
-
+import { profile } from "../../data/profile";
 import "./footer.css";
 
-const Footer = () => {
-  return (
-    <footer>
-      <a href="/#" className="footer__logo">
-        Luijhy
-      </a>
-      <ul className="permalinks">
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#experience">Experience</a>
-        </li>
-
-        <li>
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-
-      <div className="footer__socials">
-        <a href="https://www.facebook.com/kailucho">
-          <FaFacebookF />
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/luijhy-michael-guerra-flores"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <BsLinkedin />
-        </a>
-        <a href="https://github.com/kailucho" target="_blank" rel="noreferrer">
-          <BsGithub />
-        </a>
+const Footer = () => (
+  <footer className="site-footer">
+    <div className="site-shell site-footer__grid">
+      <a className="site-footer__brand" href="#home">LG / 26</a>
+      <p>Senior Software Engineer — AI Systems</p>
+      <div className="site-footer__links">
+        <a href={profile.github} target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <a href={`mailto:${profile.email}`}>Email ↗</a>
       </div>
-
-      <div className="footer__copyright">
-        <small>&copy; kaidos. All rights reserve</small>
-      </div>
-    </footer>
-  );
-};
+      <p className="site-footer__copyright">© {new Date().getFullYear()} Luijhy Guerra</p>
+    </div>
+  </footer>
+);
 
 export default Footer;

@@ -1,90 +1,79 @@
-import React, { useRef } from "react";
-import { MdOutlineEmail } from "react-icons/md";
-import { RiMessengerLine } from "react-icons/ri";
-import { BsWhatsapp } from "react-icons/bs";
+import React, { useRef, useState } from "react";
+import { FiArrowUpRight } from "react-icons/fi";
 import emailjs from "@emailjs/browser";
-
+import { profile } from "../../data/profile";
 import "./contact.css";
 
-function Contact() {
-  const form = useRef();
+const Contact = () => {
+  const form = useRef(null);
+  const [status, setStatus] = useState("idle");
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = async (event) => {
+    event.preventDefault();
+    setStatus("sending");
 
-    emailjs
-      .sendForm(
+    try {
+      await emailjs.sendForm(
         "service_1fmb1xh",
         "template_vow0wkr",
         form.current,
         "hFHEG3PD05rBxvGeK"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
       );
-    e.target.reset();
+      form.current.reset();
+      setStatus("sent");
+    } catch (error) {
+      setStatus("error");
+    }
   };
+
   return (
-    <section id="contact">
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
-      <div className="container contact__container">
-        <div className="contact__options">
-          <div className="contact__option">
-            <MdOutlineEmail className="contact__option-icon" />
-            <h4>Email</h4>
-            <h5>luijhy9234@gmail.com</h5>
-            <a
-              href="mailto:luijhy9234@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Send a message
-            </a>
-          </div>
-          <div className="contact__option">
-            <RiMessengerLine className="contact__option-icon" />
-            <h4>Messenger</h4>
-            <h5>Kaido</h5>
-            <a href="https://m.me/kailucho" target="_blank" rel="noreferrer">
-              Send a message
-            </a>
-          </div>
-          <div className="contact__option">
-            <BsWhatsapp className="contact__option-icon" />
-            <h4>Whatsapp</h4>
-            <h5>+051933053739</h5>
-            <a
-              href="https://api.whatsapp.com/send?phone=933053739"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Send a message
-            </a>
-          </div>
+    <section id="contact" className="contact section-signal">
+      <div className="site-shell contact__grid">
+        <div className="contact__statement">
+          <p className="eyebrow">05 / Start a conversation</p>
+          <h2>
+            Building something
+            <br />
+            that has to work?
+          </h2>
+          <p>
+            I&apos;m open to senior software and applied AI opportunities where architecture,
+            product judgment, and production quality all matter.
+          </p>
+          <a className="contact__email" href={`mailto:${profile.email}`}>
+            {profile.email} <FiArrowUpRight aria-hidden="true" />
+          </a>
         </div>
 
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="name" placeholder="You FUll Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea
-            name="message"
-            rows="7"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <button type="submit" className="btn btn-primary">
-            Send Message
-          </button>
+        <form className="contact-form" ref={form} onSubmit={sendEmail}>
+          <div className="contact-form__row">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" autoComplete="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" autoComplete="email" required />
+            </label>
+          </div>
+          <label>
+            <span>What are you building?</span>
+            <textarea name="message" rows="5" required />
+          </label>
+          <div className="contact-form__footer">
+            <button type="submit" disabled={status === "sending"}>
+              {status === "sending" ? "Sending…" : "Send message"}
+              <FiArrowUpRight aria-hidden="true" />
+            </button>
+            <p className="contact-form__status" aria-live="polite">
+              {status === "sent" && "Message sent. I’ll get back to you soon."}
+              {status === "error" && "Something went wrong. Please use the email link instead."}
+            </p>
+          </div>
         </form>
       </div>
     </section>
   );
-}
+};
 
 export default Contact;

@@ -1,0 +1,85 @@
+.capabilities__layout {
+  display: grid;
+  gap: 8vw;
+  grid-template-columns: 4fr 8fr;
+}
+
+.capabilities__aside {
+  align-self: start;
+  position: sticky;
+  top: calc(var(--nav-height) + 2rem);
+}
+
+.capabilities__aside p {
+  color: var(--muted-on-ink);
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
+  max-width: 24rem;
+}
+
+.capabilities__aside span {
+  color: var(--signal);
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  margin-top: var(--space-6);
+  text-transform: uppercase;
+}
+
+.capability {
+  border-top: 1px solid var(--line-dark);
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: 4rem 1fr;
+  padding-block: var(--space-6);
+  transition: padding-left var(--transition-base);
+}
+
+.capability:hover {
+  padding-left: var(--space-3);
+}
+
+.capability:last-child {
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.capability__number {
+  color: var(--signal);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+}
+
+.capability h3 {
+  font-size: clamp(1.8rem, 3.2vw, 3.5rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.capability__body > p:not(.tech-line) {
+  color: var(--muted-on-ink);
+  margin-block: var(--space-4);
+  max-width: 40rem;
+}
+
+.capability .tech-line {
+  color: var(--text-on-ink);
+}
+
+@media (max-width: 800px) {
+  .capabilities__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .capabilities__aside {
+    border-bottom: 1px solid var(--line-dark);
+    padding-bottom: var(--space-6);
+    position: static;
+  }
+}
+
+@media (max-width: 560px) {
+  .capability {
+    grid-template-columns: 2.5rem 1fr;
+  }
+}
