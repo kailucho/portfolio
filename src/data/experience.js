@@ -27,9 +27,9 @@
 export const experience = [
   {
     id: "utp",
-    role: "Software Engineer",
+    role: "Senior Software Engineer",
     organization: "UTP (Universidad Tecnológica del Perú)",
-    period: "January 2019 – Present",
+    period: "June 2023 – Present",
     technologies: ["React", "Apollo GraphQL", "NestJS", "TypeScript", "AWS"],
     highlights: [
       "Founded and built a NestJS microservice for production facial-recognition and photo-quality evaluation (face-api.js / TensorFlow.js), deployed on AWS S3/CloudFront for a university portal serving real students.",
@@ -39,7 +39,7 @@ export const experience = [
   },
   {
     id: "sigobras",
-    role: "Freelance Software Engineer",
+    role: "Full Stack Developer",
     organization: "sigobras (client engagement)",
     period: "2019 – 2021",
     technologies: ["Express", "MySQL", "React", "Socket.io"],

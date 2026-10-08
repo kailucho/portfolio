@@ -85,7 +85,7 @@ export const projects = [
     slug: "supervisa-360",
     title: "Supervisa 360",
     summary:
-      "Field-supervision coordination platform deployed to production — used by 2 real field supervisors and a manager to coordinate visits across ~330 partner associations.",
+      "Field-supervision coordination platform deployed to production — built for 2 field supervisors and a manager to coordinate visits across ~330 partner associations.",
     category: "Full-Stack Product",
     technologies: ["React 19", "TypeScript", "Supabase", "PostgreSQL", "RLS"],
     demoUrl: "https://supervisa-360-cej1o04vi-kailuchos-projects.vercel.app",
@@ -191,7 +191,7 @@ export const projects = [
     problem:
       "The university's student portal needed a way to verify photo/identity quality without a manual review bottleneck.",
     context:
-      "Part of a broader student-portal ecosystem at UTP (Universidad Tecnológica del Perú), serving thousands of students. This was a new capability, not an extension of an existing one.",
+      "Part of a broader student-portal ecosystem at UTP (Universidad Tecnológica del Perú), serving the university's students. This was a new capability, not an extension of an existing one.",
     myRole:
       "Founded the microservice — wrote the initial project structure and led the core facial-recognition and photo-evaluation implementation, within a small team.",
     architecture:

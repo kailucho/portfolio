@@ -42,12 +42,12 @@
 /** @type {Profile} */
 export const profile = {
   name: "Luijhy Guerra",
-  headline: "Senior Software Engineer — AI Systems",
+  headline: "Senior Software Engineer | Machine Learning & LLM Integration | Clean Architecture",
 
   shortBio:
     "I build AI/ML systems with the same engineering discipline I apply to any production software.",
 
-  bio: "I'm a Senior Software Engineer with hands-on, verifiable AI/ML engineering experience — not just API consumption. I design layered architectures (Clean Architecture, documented via ADRs), build and calibrate ML models end-to-end (training, calibration, ONNX export, parity-tested inference), and integrate LLMs with real tool-calling logic. I apply the same rigor to product engineering: database-level data integrity, role-based access control, and disciplined scoping — the kind of work that shipped a tool two field supervisors actually use to coordinate ~330 site visits.",
+  bio: "I'm a Senior Software Engineer with hands-on, verifiable AI/ML engineering experience — not just API consumption. I design layered architectures (Clean Architecture, documented via ADRs), build and calibrate ML models end-to-end (training, calibration, ONNX export, parity-tested inference), and integrate LLMs with real tool-calling logic. I apply the same rigor to product engineering: database-level data integrity, role-based access control, and disciplined scoping — the kind of work behind a coordination tool built for two field supervisors, covering about 330 partner associations.",
 
   location: "Arequipa, Perú (open to remote)",
   email: "luijhy9234@gmail.com",
